@@ -37,9 +37,17 @@ def incrementGarage(garage):
 def decrementGarage(garage):
     return put('http://tmobilehack.azurewebsites.net/garages', data={'type': 'out', 'garage': garage}).json()
 
+def getBestGarage():
+    return put('http://tmobilehack.azurewebsites.net/garages', data={'type': 'best', 'garage': 'none'}).json()
+
 #print(putCheckIn("Multipurpose Room 1", 5))
 # print(cancelReservation(11, "Workspace 2"))
 # print(putCheckOut("Table Room 1", 10))
-print(getReservation())
+print(getBestGarage())
+print(getGarageData('all'))
+incrementGarage("Newport 2")
+print(getGarageData("Newport 2"))
+# print(getBestGarage())
+# print(getReservation())
 
 # print(putCheckIn("Multipurpose Room 1", 15))
