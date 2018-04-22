@@ -1,7 +1,14 @@
 from requests import put, get, post
+from datetime import datetime
 
 def putCheckIn(name, number):
-    return put('http://127.0.0.1:5002/echo', data={'name': name, 'data': number}).json()
+    return put('http://tmobilehack.azurewebsites.net/echo', data={'name': name, 'data': number}).json()
+
+def putReservation(number, hour):
+    return put('http://tmobilehack.azurewebsites.net/reserve', data={'number': number, 'hour': hour}).json()
+
+def getReservation():
+    return get('http://tmobilehack.azurewebsites.net/reserve').json()
 
 def getBestRoom():
     return get('http://tmobilehack.azurewebsites.net/twilio/workspaces/best').json()
@@ -10,6 +17,7 @@ def getWorkspaces():
     return get('http://tmobilehack.azurewebsites.net/twilio/workspaces/all').json()
 
 def twilioPost():
-    return post('http://tmobilehack.azurewebsites.net/twilio').json()
+    return get('http://tmobilehack.azurewebsites.net/twilio/all/all').json()
 
-#print(twilioPost())
+print(putReservation(30, 2))
+print(getReservation())
