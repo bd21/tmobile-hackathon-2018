@@ -144,6 +144,7 @@ class HandleIncomingMessage(object):
 
 
     def ParseParkingRequest(self):
+        self.counter -= 1
         return "Parking has not been implemented yet."
 
     def GetCounter(self):

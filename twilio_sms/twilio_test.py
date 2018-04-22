@@ -2,7 +2,7 @@ from twilio.rest import Client
 from twilio.twiml.messaging_response import Message, MessagingResponse
 
 account_sid = "ACd42b430709743241a44c295b0dad4eac"
-auth_token  = "1325f385412508702d47c509e51df99f"
+auth_token  = "132f"
 client = Client(account_sid, auth_token)
 
 
