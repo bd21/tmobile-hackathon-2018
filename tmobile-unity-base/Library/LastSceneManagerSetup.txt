@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/reference-office.unity
+- path: Assets/Scenes/reference-office.unity
   isLoaded: 1
   isActive: 1
