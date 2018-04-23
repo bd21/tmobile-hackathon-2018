@@ -12,7 +12,7 @@ def get_room_name(number):
     return None
 
 # increases time step
-MULT = 1
+MULT = 5
 
 with open('paths.csv', 'r') as csvfile:
     reads = csv.reader(csvfile)
