@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class PersonController : MonoBehaviour {
     //fields
-    [Range(0.0f, 24.0f)]
-    public float timeOfDay;
-    public enum Capacity {
+    [SerializeField]
+    Transform destination;
 
-    }
-
-	// Use this for initialization
-	void Start () {
-        timeOfDay = 6f;
-
+    // Use this for initialization
+    void Start () {
+        
 	}
 	
 	// Update is called once per frame

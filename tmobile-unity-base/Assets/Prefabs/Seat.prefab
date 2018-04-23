@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114895676473967260}
   m_Layer: 0
   m_Name: Seat
-  m_TagString: Untagged
+  m_TagString: chair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,6 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 2547cf76075ca004eba38a7687a09d57, type: 2}
+  - {fileID: 2100000, guid: ec7b691df016eb54db122fa3bf1ebdb3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98,6 +99,7 @@ MonoBehaviour:
   triggerObject: {fileID: 1538599612482498, guid: 18a5053ff3221824fb1f576a6418a536,
     type: 2}
   originalColor: {r: 0, g: 0.101960786, b: 0.78039217, a: 1}
+  occupied: 0
 --- !u!135 &135208215540070356
 SphereCollider:
   m_ObjectHideFlags: 1

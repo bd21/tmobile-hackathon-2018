@@ -1,24 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PersonBehavior : MonoBehaviour {
     public int state; // 0 - idle, 1 - moving to room, 2 - moving to seat
     public GameObject person;
-    public Vector3 target;
     public Rigidbody body;
     public bool manuallyControlled;
-
-	// Use this for initialization
-	void Start () {
+    //AI
+    //[SerializeField]
+    public Transform target;
+    public NavMeshAgent navMeshAgent;
+    // Use this for initialization
+    void Start () {
         manuallyControlled = false;
         person = GetComponent<GameObject>();
         body = GetComponent<Rigidbody>();
         body.freezeRotation = true;
-        target = new Vector3(0,0,0);
+        // Pathfinding
+        navMeshAgent = this.GetComponent<NavMeshAgent>();
+
+        if(navMeshAgent == null) {
+            Debug.LogError("NavMeshAgent is not attached to " + gameObject.name);
+        } else {
+            SetDestination();
+        }
+        
         
 	}
 	
+    private void SetDestination() {
+        if(target != null) {
+            Vector3 targetVector = target.transform.position;
+            navMeshAgent.SetDestination(targetVector);
+        }
+    }
+
 	// Update is called once per frame
 	void Update () {
         if(!manuallyControlled) {

@@ -7,10 +7,12 @@ public class SeatController : MonoBehaviour {
     public GameObject triggerObject;
     private Renderer rend;
     public Color originalColor;
+    public bool occupied;
     // Use this for initialization
     void Start () {
         trigger = GetComponent<Collider>();
         rend = GetComponent<Renderer>();
+        occupied = false;
     }
 	
 	// Update is called once per frame
@@ -22,14 +24,14 @@ public class SeatController : MonoBehaviour {
         //Debug.Log("enter");
         rend.material.shader = Shader.Find("Specular");
         rend.material.SetColor("_EmissionColor", Color.cyan);
-
+        occupied = true;
     }
 
     void OnTriggerExit(Collider other) {
         //Debug.Log("exit");
         rend.material.shader = Shader.Find("Specular");
         rend.material.SetColor("_EmissionColor", originalColor);
-
+        occupied = false;
     }
 
 }

@@ -239,6 +239,14 @@
     <Compile Include="Assets\PersonBehavior.cs" />
     <Compile Include="Assets\PersonController.cs" />
     <Compile Include="Assets\SeatController.cs" />
+    <Compile Include="Assets\SimpleCumulus\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
+    <Compile Include="Assets\SimpleCumulus\Demo\Scripts\Player\SmoothMouseLook.cs" />
+    <Compile Include="Assets\SimpleCumulus\Demo\Scripts\Skybox\SkyboxChanger.cs" />
+    <Compile Include="Assets\SimpleCumulus\Demo\Scripts\Skybox\SkyboxRotator.cs" />
+    <Compile Include="Assets\SpawnerBehavior.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Outlined-Silhouette Only.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
