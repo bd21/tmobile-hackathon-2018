@@ -1,9 +1,9 @@
 # tmobile-hackathon-2018
 
-This is a project to solve three of T-Mobile's problems:
-1. Lack of parking
-2. Conference room scheduling chaos
-3. Collaboration space
+This is a project to solve three of T-Mobile's problems:  
+#1 Lack of parking  
+#2 Conference room scheduling chaos  
+#3 Collaboration space  
 
 1. Parking (Python, OpenCV)
 With Computer Vision, we can point a camera at a garage entrance and calculate the difference between frames to draw bounding boxes around tracked cars.  This updates a count of the capacity of each garage, which can then be accessed by drivers through Alexa or text.
@@ -22,4 +22,4 @@ For the curious, we did not place in the top 3.  The winners were
 2nd Place - Business pitch about using computer vision to track cars in parking lots
 3rd Place - A video showing a plate tilting left or right to sort recycling/trash
 
-Really proud of our team and what we accomplished.
+Really proud of our team and what we accomplished!
