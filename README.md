@@ -12,9 +12,7 @@ With Computer Vision, we can point a camera at a garage entrance and calculate t
 At T-mobile, 95% of meeting rooms are booked 2 weeks out, and 25% are no shows.  We allowed users to reserve rooms via Amazon's Alexa or text (Twilio).  Each meeting room contains an Echo, and users must check-in in the first five minutes at the room's Echo to keep the room for that hour.
 
 3. Collaboration space (Unity3D)  
-A T-Mobile office building floor is displayed in a 3D simulation which shows workspaces, conference rooms, and AI workers which all update according to a schedule and a user's input through texting or Alexa.  A short video can be found here:  
-
-https://www.youtube.com/watch?v=7aBNsPSK-_Y  
+A T-Mobile office building floor is displayed in a 3D simulation which shows workspaces, conference rooms, and AI workers which all update according to a schedule and a user's input through texting or Alexa.  A short video can be found here: https://www.youtube.com/watch?v=7aBNsPSK-_Y  
 
 
 For the curious, we placed in the top 5.  The winners were  
