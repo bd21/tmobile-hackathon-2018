@@ -17,9 +17,9 @@ A T-Mobile office building floor is displayed in a 3D simulation which shows wor
 <video>
 
 
-For the curious, we did not place in the top 3.  The winners were
-1st Place - Scan an RFID card, turn on a light remotely
-2nd Place - Business pitch about using computer vision to track cars in parking lots
-3rd Place - A video showing a plate tilting left or right to sort recycling/trash
+For the curious, we placed in the top 5.  The winners were  
+1st Place - Scan an RFID card, turn on a light remotely  
+2nd Place - Business pitch about using computer vision to track cars in parking lots  
+3rd Place - A video showing a plate tilting left or right to sort recycling/trash  
 
-Really proud of our team and what we accomplished!
+Really proud of our team and what we accomplished!  
