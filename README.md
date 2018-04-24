@@ -5,13 +5,13 @@ This is a project to solve three of T-Mobile's problems:
 #2 Conference room scheduling chaos  
 #3 Collaboration space  
 
-1. Parking (Python, OpenCV)
+1. Parking (Python, OpenCV)  
 With Computer Vision, we can point a camera at a garage entrance and calculate the difference between frames to draw bounding boxes around tracked cars.  This updates a count of the capacity of each garage, which can then be accessed by drivers through Alexa or text.
 
-2. Conference rooms (AWS Lambda, Flask, Twilio)
+2. Conference rooms (AWS Lambda, Flask, Twilio)  
 At T-mobile, 95% of meeting rooms are booked 2 weeks out, and 25% are no shows.  We allowed users to reserve rooms via Amazon's Alexa or text (Twilio).  Each meeting room contains an Echo, and users must check-in in the first five minutes at the room's Echo to keep the room for that hour.
 
-3. Collaboration space (Unity3D)
+3. Collaboration space (Unity3D)  
 A T-Mobile office building floor is displayed in a 3D simulation which shows workspaces, conference rooms, and AI workers which all update according to a schedule and a user's input through texting or Alexa.  A short video can be found here:
 
 <video>
