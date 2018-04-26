@@ -35,14 +35,6 @@ while True:
     (grabbed, frame) = camera.read()
     # text = "Unoccupied"
 
-    if counter < 320:
-        text = "50"
-    elif (counter >= 320) & (counter < 620):
-        text = "Space freed: +1"
-    elif (counter >= 620) & (counter < 1160):
-        text = "51"
-    elif counter >= 1160:
-        text = "Space taken: -1"
 
     # if the frame could not be grabbed, then we have reached the end
     # of the video
